@@ -24,7 +24,7 @@
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 3
 #define BOX_WIDTH 25
-#define MATRIX_NAME_STRING "CDK Matrix"
+#define MATRIX_NAME_STRING "Binary File Contents"
 
 using namespace std;
 int main()
