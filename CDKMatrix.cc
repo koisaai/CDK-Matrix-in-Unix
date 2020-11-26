@@ -26,10 +26,11 @@
 #define BOX_WIDTH 25
 #define MATRIX_NAME_STRING "Binary File Contents"
 
+void printMessage();
 using namespace std;
 int main()
 {
-
+  void printMessage();
   WINDOW    *window;
   CDKSCREEN *cdkscreen;
   CDKMATRIX *myMatrix; 
