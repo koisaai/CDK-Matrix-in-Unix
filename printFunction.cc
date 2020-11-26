@@ -10,10 +10,9 @@
 
 #include <iostream>
 using namespace std;
+
 void printMessage()
 {
-  //just an intro to my Matrix! :)
-
+  //just an intro to my matrix! :)
   cout << "Hello! I am a matrix created using curses and CDK!" << endl;
-
 }

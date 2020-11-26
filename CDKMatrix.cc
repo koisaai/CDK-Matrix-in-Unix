@@ -26,10 +26,11 @@
 #define BOX_WIDTH 25
 #define MATRIX_NAME_STRING "Binary File Contents"
 
+void printMessage();
 using namespace std;
 int main()
 {
-
+  void printMessage();
   WINDOW    *window;
   CDKSCREEN *cdkscreen;
   CDKMATRIX *myMatrix; 
@@ -75,7 +76,9 @@ int main()
   BinaryFileRecord *myRecord = new BinaryFileRecord();
   BinaryFileHeader *myHeader = new BinaryFileHeader();
 
-  ifstream binInFile ("/scratch/perkins/cs3377.bin", ios::in | ios::binary);
+  ifstream binInFile;
+  ofstream binOutFile;
+  binInFile.open("/scratch/perkins/cs3377.bin", ios::in | ios::binary);
   if(binInFile)
     {
       binInFile.read((char*)myHeader, sizeof(BinaryFileHeader));
